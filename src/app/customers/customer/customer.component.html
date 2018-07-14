@@ -1,7 +1,8 @@
 <form class="cus-form" #customerForm="ngForm">
   <div class="form-row">
     <div class="form-group col-md-6">
-      <input class="form-control" name="FirstName" #FirstName="ngModel" [(ngModel)]="customerService.selectedCustomer.FirstName" placeholder="First Name">
+      <input class="form-control" name="FirstName" #FirstName="ngModel" [(ngModel)]="customerService.selectedCustomer.FirstName" placeholder="First Name" required>
+       <div class="validation-error" *ngIf="FirstName.invalid && FirstName.touched"> This is required </div>
     </div>
     <div class="form-group col-md-6">
       <input class="form-control" name="LastName" #LastName="ngModel" [(ngModel)]="customerService.selectedCustomer.LastName" placeholder="Last Name">

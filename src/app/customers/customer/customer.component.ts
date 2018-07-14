@@ -20,7 +20,7 @@ export class CustomerComponent implements OnInit {
   resetForm (form? : NgForm){
       if (form != null)
       form.reset();
-      console.log("click done");
+      console.log("my reset button working");
     this.customerService.selectedCustomer = {
         FirstName : '',
         LastName : '',
