@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { CustomersComponent } from './customers/customers.component';
-import { CustomerComponent } from './customers/customer/customer.component';
+import { CustomerComponent } from "./customers/customer/customer.component";
 import { CustomerListComponent } from './customers/customer-list/customer-list.component';
 
 @NgModule({
